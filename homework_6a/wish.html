@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li class="roll"><img src="../img/roll.png" alt="cinnamon roll icon"></li>
+                <li class="title"><a href="index.html" style="font-size: 22px;">Bun Bun Bake Shop</a></li>
+                <div class="link-elements"></div>
+                    <li><a href="../index.html" style="color: #EFC65B">Home</a></li>
+                    <li><a href="../order.html">Order</a></li>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="../index.html">Contact</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./wish.html">Wishlist</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="myCart">
+        <h3 class="wish">My WishList</h3>
+        <div class="cards-flex">
+
+            <template id="cart-item-template">
+                <div class="card1">
+                    <div class="card-details row">
+                        <img id="cart-image" alt="original cinnamon roll" class="col">
+                        <div class="col text">
+                            <span class="title">Original&emsp;&emsp;&emsp;</span>
+                            <span class="price"></span>
+                            <br>
+                            <span class="quantity"></span>
+                            <span class="quantity quantity-value"></span>
+                            <br>
+                            <span class="glaze"></span>
+                            <span class="glaze glaze-value"></span>
+                            <br>
+                            <button style="color: blue; background-color: none; text-decoration: underline;">Edit</button>
+                            <span>&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;</span>
+                            <button id="delete" style="color: blue; background-color: none; text-decoration: underline;">Delete</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </template>
+
+            
+        <div class="total">
+            <p>SUBTOTAL&emsp;&emsp;<span id="subtotal"></span></p>
+            <a id="addAllToCart" href="./cart.html">Add all to cart</a>
+            <p></p>
+        </div>
+    </div>
+    <script src="../js/wishlist.js" async></script>
+</body>
+
+</html>

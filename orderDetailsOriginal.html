@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Bun Bun Bake Shop</title>
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="roll"><img src="img/roll.png" alt="cinnamon roll icon"></li>
+                    <li class="title"><a href="index.html" style="font-size: 22px;">Bun Bun Bake Shop</a></li>
+                    <div class="link-elements"></div>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html" style="color: #EFC65B">Order</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="./homework_6a/cart.html">Cart</a></li>
+                        <li><a href="./homework_6a/wish.html">Wishlist</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <section class="orderDetails">
+                <div class="row">
+                    <div class="col">
+                        <img id="detail-img" src="img/original.jpg" alt="original cinnamon roll">
+                    </div>
+                    <div class="col col2">
+                        <div class="inner-col">
+                            <div class="inner-row">
+                                <span id="detail-title" style="font-weight: bold;">Original</span>
+                                <span style="padding-left: 50px">$4.00 ea.</span>
+                            </div>
+                            <div class="inner-row">
+                                <span style="font-weight: bold;">Quantity</span>
+                                <span id="one" class="circle">1&ensp;</span>
+                                <span id="three" class="circle">3&ensp;</span>
+                                <span id="six" class="circle">6&ensp;</span>
+                                <span id="twelve" class="circle">12&ensp;</span>
+                            </div>
+                            <div class="inner-row">
+                                <span style="font-weight: bold;">Glaze</span>
+                                <select name="glaze" id="glaze">
+                                    <option value="none">None</option>
+                                    <option value="vanilla-milk">Vanilla-milk</option>
+                                    <option value="sugar-milk">Sugar-milk</option>
+                                    <option value="double-chocolate">Double-chocolate</option>
+                                </select>
+                            </div>
+                            <a id="addToCartOriginal" style="font-weight: bold;">Add to Cart</a>
+                            <a id="wishlistOriginal" style="font-weight: bold;">Wishlist</a>
+                            <div class="inner-row">
+                                <p style="font-weight: bold;">Ingredients</p>
+                                <ul class="bullet-points">
+                                    <li style="list-style: circle">eggs</li>
+                                    <li style="list-style: circle">butter</li>
+                                    <li style="list-style: circle">ground cinnamon</li>
+                                    <li style="list-style: circle">cream cheese</li>
+                                    <li style="list-style: circle">sugar</li>
+                                    <li style="list-style: circle">flour</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="reviews">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/stars.jpg" alt="review stars"> 
+                        <p class="lauren" style="font-weight: bold">Lauren S.</p>
+                    </div>
+                    <div class="col col2">
+                        <h3 class="reviews">Reviews</h3>
+                        <p>This place is amazing! I ordered three originals for my family <br> and my kids love it! 
+                            Will definitely be coming back for more.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="./js/orderDetails.js" async></script>
+    </body>
+</html>
