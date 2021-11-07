@@ -267,3 +267,7 @@ select {
 .total {
     padding-left: 550px;
 }
+
+#wishlistOriginal {
+    margin-top: 20px;
+}
